@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="29.063" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US001_Amazon_Sayfasi_Testi" name="TC01_Amazon_Sayfasinda_Urun_Aratilir" time="28.882">
+<testsuite name="Cucumber" time="17.002" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US003_Amazon_Testi" name="TC01_Amazonda_Urun_aratma" time="16.784">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at techproed.stepDefinitions.GoogleStepDefinition.basligin_icerdigini_dogrular(GoogleStepDefinition.java:22)
+	at ✽.basligin "nokia" icerdigini dogrular(file:///C:/Users/Zeyne/IdeaProjects/Cucumber/src/test/resources/features/day35_Excel_Rerun/US003_Rerun.feature:7)
+]]>
+</failure>
 <system-out><![CDATA[
-Given kullanici_amazon_sayfasina_gider......................................passed
-And arama_kutusunda_iphone_aratir...........................................passed
-And sayfayi_kapatir.........................................................passed
+Given kullanici_"amazon_Url"_sayfasina_gider................................passed
+And arama_kutusunda_"iphone"_aratir.........................................passed
+And basligin "nokia" icerdigini dogrular....................................failed
 ]]></system-out>
 </testcase>
 </testsuite>
